@@ -29,13 +29,13 @@ public class WConfig {
         }
         {
             BUILDER.push("Memory Values");
+            maxMemGB = BUILDER
+                    .comment("The maximum amount of memory the Server process is allowed to use before shutting down\n  In Gigabytes")
+                    .defineInRange("Max Memory Usage (Amount)", 0, 0, Integer.MAX_VALUE)
+            ;
             maxMemPercent = BUILDER
                     .comment("The maximum amount of memory the Server process is allowed to use before shutting down\n  In Percent")
                     .defineInRange("Max Memory Usage (Percent)", 90, 0, 100)
-            ;
-            maxMemGB = BUILDER
-                    .comment("The maximum amount of memory the Server process is allowed to use before shutting down\\n  In Gigabytes")
-                    .defineInRange("Max Memory Usage (Amount)", 0, 0, Integer.MAX_VALUE)
             ;
             type = BUILDER
                     .comment("Whether to use Max Memory Percent or Amount")
