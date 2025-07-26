@@ -3,17 +3,17 @@
 	"id": "watchdog",
 	"version": "${version}",
 	"name": "Watchdog",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This mod automatically closes the Server if memory usage gets too high",
 	"authors": [
-		"Me!"
+		"I Ate Minecraft"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/watchdog/icon.png",
-	"environment": "*",
+	"icon": "assets/watchdog/watchdog-logo.png",
+	"environment": "server",
 	"entrypoints": {
 		"main": [
 			"net.iateminecraft.watchdog.Watchdog"
